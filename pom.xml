@@ -328,7 +328,14 @@
             <version>1.7.7</version>
             <type>jar</type>
         </dependency>
-
+	<groupId>org.owasp</groupId>
+	<artifactId>dependency-check-maven</artifactId>
+	<version>10.0.4</version>               
+	<configuration>
+   	   <nvdApiKey>aa23a34b-xxxx-xxxx-9508-7bc89ba64772</nvdApiKey>
+   	   <failBuildOnCVSS>7</failBuildOnCVSS>
+   	   <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+	</configuration>
         <!-- ************* END spring MVC and related dependencies ************** -->
 
     </dependencies>
